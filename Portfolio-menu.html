@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<HTML>
+
+    <head>
+        <link rel="stylesheet" href="Portfolio-menu.css" >
+        <meta charset="UTF-8">
+        <title>Protfolo-menu</title>
+    </head>
+
+    <body>
+
+        <header><!--一番上に設置-->
+            <a href="Portfolio01.html">ホーム画面</a>
+            <a href="Portfolio-menu.html">メニュー</a>
+            <a href="Portfolio-Contact.html">お問い合わせフォーム</a>
+        </header>
+
+        <h1>メニュー一覧</h1>
+
+        <div class="main">
+
+        <div class="box">
+            <img src="tea.png" class="menuImg">
+
+               ￥500<br>
+               ダージリン、アールグレイ、<br>
+               アッサムから選択できます。<br>
+               この一杯が至極<br>
+        </div>
+
+        <div class="box">
+            <img src="set.png" class="menuImg">
+
+            <p>￥900<br>
+               これ以上の食べ合わせがあるだろうか<br>
+               月替わりのチョコを3つ提供</p>
+        </div>
+
+        <div class="box">
+            <img src="Parfait.png" class="menuImg">
+
+            <p>￥1200<br>
+               完熟マンゴーをふんだんに使った一品<br>
+               南国の太陽をご賞味あれ</p>
+        </div>
+
+        <div class="box">
+            <img src="Cake.png" class="menuImg">
+
+            <p>￥900<br>
+               これ以上の食べ合わせがあるだろうか<br>
+               月替わりのチョコを3つ提供</p>
+        </div>
+
+        <div id="modal" class="modal">
+            <img  id="modalImg">
+        </div>
+
+        </div>
+
+
+    </body>
+
+    <footer>
+        <p>【〇〇カフェ】<br>
+            スプリングフィールド・エバーグリーン・テラス742番地<br>
+        </p>
+        <a href="https://www.youtube.com/watch?v=kdOPBP9vuZA&list=LL&index=8">SNSはこちらから</a>
+    </footer>
+
+    <script>
+
+const menuImgs =  document.querySelectorAll(".menuImg");
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+
+menuImgs.forEach(function(img){
+    img.addEventListener("click", function(){
+
+         modal.classList.add("show");
+        modalImg.src = img.src;
+
+});
+
+});
+
+modal.addEventListener("click", function(){
+    modal.classList.remove("show");
+});
+    </script>

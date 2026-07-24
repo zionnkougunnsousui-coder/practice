@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<HTML>
+
+    <head>
+        <link rel="stylesheet" href="Portfolio-Contact.css">
+        <meta charset="UTF-8">
+        <title>Prortfolio-Contact</title>
+    </head>
+
+    <body>
+
+        <header><!--一番上に設置-->
+            <a href="Portfolio01.html">ホーム画面</a>
+            <a href="Portfolio-menu.html">メニュー</a>
+            <a href="Portfolio-Contact.html">お問い合わせフォーム</a>
+        </header>
+
+        <h1>お問い合わせフォーム</h1>
+
+
+     <div class="main">
+
+        <div class="box">
+            <p>お名前</p>
+            <input type="text" id="name">
+        </div>
+
+        <div class="box">
+            <p>電話番号</p>
+            <input type="text" id="number">
+        </div>
+
+        <div class="box">
+            <p>メールアドレス</p>
+            <input type="text" id="email">
+        </div>
+
+        <div class="box">
+            <p>お問い合わせ内容</p>
+            <input type="text" id="question">
+        </div>
+        
+        <div class="send">
+            <button onclick="check()">上記の内容で送信</button>
+        </div>
+
+     </div>
+
+    </body>
+
+
+    <footer>
+        <p>【〇〇カフェ】<br>
+            スプリングフィールド・エバーグリーン・テラス742番地<br>
+        </p>
+        <a href="https://www.youtube.com/watch?v=kdOPBP9vuZA&list=LL&index=8">SNSはこちらから</a>
+    </footer>
+
+
+
+    <script>
+
+        function check(){
+
+            let ids = ["name","number","email","question"];
+
+            for(let i =0; i < (ids.length); i++){
+
+                let value =document.getElementById(ids[i]).value;
+
+                if(value === ""){
+                    alert("未入力の項目があります");
+                    return;
+                }
+            }
+
+            location.href = "Portfolio-success.html";
+
+        }
+    </script>

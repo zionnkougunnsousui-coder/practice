@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*----------
+　ヘッダー
+----------*/
+header{
+    position: fixed; 
+    width: 100%;
+    background:#333;
+    padding:20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header a{
+    color: white;
+}
+
+header a:hover{
+    background-color:white;
+    color:black
+}
+/*----------
+  全体
+-----------*/
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image:url("images.png");
+}
+
+/*----------
+　へッダー
+----------*/
+h1{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/*----------
+　メイン画面
+----------*/
+.main{
+    min-height: 10vh;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*----------
+　項目（BOX）
+----------*/
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    opacity: 0.5;
+
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/*----------
+　フッダー
+----------*/
+footer{
+    width: 100%;
+
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*----------
+  ページ全体
+----------*/
+body{
+    /*配置*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*大きさ*/
+    min-height: 100vh;
+
+    /*見た目*/
+    background-color: gray;
+}
+
+/*----------
+メイン画面
+----------*/
+.main{
+    background-color: white;
+    border: 2px solid black;
+}
+
+/*----------
+  タイトル
+----------*/
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 400px;
+    height: 100px;
+}
+
+/*----------
+  本文
+----------*/
+.boss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------
+  項目（BOX）
+----------*/
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+}
